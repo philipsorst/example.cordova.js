@@ -1,0 +1,8 @@
+<mat-list>
+    <mat-list-item *ngFor="let event of events">
+        <h3 matLine> {{event.type}} </h3>
+        <p matLine>
+            <span> {{event.timestamp | date:'medium'}} </span>
+        </p>
+    </mat-list-item>
+</mat-list>

@@ -32,6 +32,12 @@
                    [routerLink]="['/vibration']">
                     Vibration
                 </a>
+                <a mat-list-item
+                   tabindex="-1"
+                   (click)="sidenav.close()"
+                   [routerLink]="['/resumepause']">
+                    Resume/Pause
+                </a>
             </mat-nav-list>
         </mat-sidenav>
         <div>

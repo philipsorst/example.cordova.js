@@ -23,6 +23,7 @@ import {GeoLocationService} from "../service/geolocation.service";
 import {GeolocationComponent} from "../component/geolocation.component";
 import {VibrationComponent} from "../component/vibration.component";
 import {VibrationService} from "../service/vibration.service";
+import {ResumepauseComponent} from "../component/resumepause.component";
 
 export function initServiceFactory(initService: InitService): Function {
     return () => initService.initialize();
@@ -33,7 +34,8 @@ export function initServiceFactory(initService: InitService): Function {
         AppComponent,
         HomeComponent,
         GeolocationComponent,
-        VibrationComponent
+        VibrationComponent,
+        ResumepauseComponent
     ],
     imports: [
         BrowserModule,
@@ -48,7 +50,8 @@ export function initServiceFactory(initService: InitService): Function {
         MatProgressSpinnerModule,
         MatCardModule,
         MatSlideToggleModule,
-        MatSliderModule
+        MatSliderModule,
+        MatListModule
     ],
     providers: [
         DeviceService,
