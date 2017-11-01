@@ -1,0 +1,15 @@
+<mat-card>
+    <mat-card-title>Duration</mat-card-title>
+    <mat-slider min="10" max="5000" step="10" value="1000" (change)="changeDuration($event)"></mat-slider>
+    <button type="button" mat-button (click)="vibrate()">Vibrate</button>
+
+</mat-card>
+
+<mat-card>
+    <mat-card-title>Interval</mat-card-title>
+    <button type="button" mat-raised-button (click)="vibrateInterval()">Interval</button>
+</mat-card>
+
+<mat-card>
+    <button type="button" mat-raised-button (click)="cancel()">Cancel</button>
+</mat-card>

@@ -1,0 +1,40 @@
+<mat-card>
+    <mat-card-title>Options</mat-card-title>
+
+    <mat-slide-toggle [checked]="positionOptions.enableHighAccuracy" (change)="setAccuracy($event)">
+        High Accuracy
+    </mat-slide-toggle>
+</mat-card>
+
+<mat-progress-spinner mode="indeterminate" style="margin: 0 auto" *ngIf="position == null"></mat-progress-spinner>
+
+<mat-card *ngIf="position != null" class="mat-typography">
+    <mat-card-title>Position</mat-card-title>
+
+    <dl>
+        <dt>Timestamp</dt>
+        <dd>{{position.timestamp | date:'medium'}}</dd>
+
+        <dt>Latitude</dt>
+        <dd>{{position.coords.latitude}}</dd>
+
+        <dt>Longitude</dt>
+        <dd>{{position.coords.longitude}}</dd>
+
+        <dt>Altitude</dt>
+        <dd>{{position.coords.altitude}}</dd>
+
+        <dt>Heading</dt>
+        <dd>{{position.coords.heading}}</dd>
+
+        <dt>Speed</dt>
+        <dd>{{position.coords.speed}}</dd>
+
+        <dt>Accuracy</dt>
+        <dd>{{position.coords.accuracy}}</dd>
+
+        <dt>Altitude Accuracy</dt>
+        <dd>{{position.coords.altitudeAccuracy}}</dd>
+    </dl>
+
+</mat-card>

@@ -1,0 +1,30 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+$roboto-font-path: "~roboto-fontface/fonts";
+@import "~roboto-fontface/css/roboto/sass/roboto-fontface.scss";
+
+body {
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+#wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-toolbar {
+  flex: 0;
+}
+
+.mat-sidenav-container {
+  flex: 1;
+}
+
+.mat-card {
+  margin: 24px;
+}
